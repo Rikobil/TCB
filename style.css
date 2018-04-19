@@ -2,6 +2,13 @@
 body{
   margin: 0;
 }
+
+
+/* ALL PAGES */
+.mt{
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* HEADER */
 
 header{
@@ -13,6 +20,7 @@ header{
   position: absolute;
   left: 0%;
   height: 50px;
+  margin: 12.5px;
 }
 .header-menu{
   position: absolute;
