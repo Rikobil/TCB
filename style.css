@@ -1,6 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body{
+  margin: 0;
+}
 /* HEADER */
 
-.header-logo{
+header{
+  position: relative;
   height: 75px;
-  width: 100%;
+  background-color: red;
+}
+.header-logo{
+  position: absolute;
+  left: 0%;
+  height: 50px;
+}
+.header-menu{
+  position: absolute;
+  right: 0;
+}
+header li{
+  display: inline-block;
 }

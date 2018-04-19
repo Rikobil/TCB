@@ -27,5 +27,8 @@
 			<!-- header -->
 			<header>
 				<img class="header-logo" src="<?php echo get_template_directory_uri(); ?>/img/Logo-tcb.svg" alt="Logo" class="logo-img">
+				<div class="header-menu">
+					<?php wp_nav_menu( array( 'theme_location' => 'menu' ) ); ?>
+				</div>
 			</header>
 			<!-- /header -->
