@@ -26,6 +26,6 @@ header{
   position: absolute;
   right: 0;
 }
-header li{
+.header-menu li{
   display: inline-block;
 }
