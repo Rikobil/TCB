@@ -11,21 +11,9 @@ body{
 
 /* HEADER */
 
-header{
-  position: relative;
-  height: 75px;
-  background-color: red;
-}
 .header-logo{
   position: absolute;
   left: 0%;
   height: 50px;
   margin: 12.5px;
-}
-.header-menu{
-  position: absolute;
-  right: 0;
-}
-.header-menu li{
-  display: inline-block;
 }
