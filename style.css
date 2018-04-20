@@ -112,3 +112,64 @@ body{
     margin-top: 0px;
   }
 }
+
+/* Slider carousel bootstrap */
+
+.carousel{
+  height: 309px;
+}
+
+.carousel-indicators{
+  margin-left: 36.5%;
+  margin-top: 2%;
+  bottom: 2px;
+}
+
+.carousel-indicators li{
+  background-color: #00EFBA;
+  width: 20px;
+  height: 20px;
+  margin-left: 2%;
+  cursor: pointer;
+}
+
+.carousel-indicators li:hover{
+  background-color: #391CF1;
+}
+
+.carousel-indicators .active{
+  background-color: #391CF1;
+}
+
+.carousel-inner{
+  width: 40%;
+  height: 500px;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+
+.carousel-control-next, .carousel-control-prev{
+  background-color: #F0F5FC;
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+  margin-top: 20%;
+  z-index: 20;
+}
+
+.carousel-control-next:hover, .carousel-control-prev:hover{
+  background-color: #d9e7fc ;
+}
+
+.carousel-control-prev{
+  margin-left: 52.5%;
+}
+
+.carousel-control-next{
+  margin-right: 30%;
+}
+
+/* .carousel-control-prev-icon{
+  background-color: #000000;
+} */
