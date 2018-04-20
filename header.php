@@ -29,50 +29,42 @@
 		<div class="wrapper">
 			<!-- header -->
 			<header>
-				<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				  <a class="navbar-brand" href="#"><img class="header-logo" src="<?php echo get_template_directory_uri(); ?>/img/Logo-tcb.svg" alt="Logo" class="logo-img">
-</a>
-				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon"></span>
-				  </button>
+						<nav class="navbar navbar-expand-lg navbar-light bg-light">
+						  <a class="navbar-brand" href="http://localhost:8888/TCB/"><img class="header-logo" src="<?php echo get_template_directory_uri(); ?>/img/Logo-tcb.svg" alt="Logo" class="logo-img"></a>
+						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						    <span class="navbar-toggler-icon"></span>
+						  </button>
 
-				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				    <ul class="navbar-nav mr-auto">
-				      <li class="nav-item active">
-				        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="#">Link</a>
-				      </li>
-				      <li class="nav-item dropdown">
-				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				          Dropdown
-				        </a>
-				        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				          <a class="dropdown-item" href="#">Action</a>
-				          <a class="dropdown-item" href="#">Another action</a>
-				          <div class="dropdown-divider"></div>
-				          <a class="dropdown-item" href="#">Something else here</a>
-				        </div>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link disabled" href="#">Disabled</a>
-				      </li>
-				    </ul>
-				    <form class="form-inline my-2 my-lg-0">
-				      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-				      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-				    </form>
-				  </div>
-				</nav>
-
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-md-2">
-						</div>
-					</div>
-				</div>
-				<div class="header-menu mt">
-				</div>
+						  <div class="mt collapse navbar-collapse" id="navbarSupportedContent">
+						    <ul class="navbar-nav mr-auto">
+						      <li class="nav-item active">
+						        <a class="nav-link underline" href="http://localhost:8888/TCB/">Accueil<span class="sr-only">(current)</span></a>
+						      </li>
+						      <li class="nav-item">
+						        <a class="nav-link underline" href="http://localhost:8888/TCB/actualites/">Actualités</a>
+						      </li>
+									<li class="nav-item">
+										<a class="nav-link underline" href="http://localhost:8888/TCB/resultats/">Résultats</a>
+									</li>
+						      <li class="nav-item dropdown">
+						        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						          Club
+						        </a>
+						        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+											<a class="dropdown-item underline" href="http://localhost:8888/TCB/club/">Présentation du club</a>
+											<a class="dropdown-item underline" href="http://localhost:8888/TCB/tarifs/">Tarifs</a>
+						          <a class="dropdown-item underline" href="http://localhost:8888/TCB/equipe/">L'équipe</a>
+						          <a class="dropdown-item underline" href="http://localhost:8888/TCB/reglement-du-club/">Règlement</a>
+						        </div>
+						      </li>
+									<li class="nav-item underline">
+										<a class="nav-link" href="http://localhost:8888/TCB/contact/">Contact</a>
+									</li>
+									<li class="nav-item header">
+										<a class="" href="http://localhost:8888/TCB/connexion/"><button type="button" class="home-btn btn btn-primary">Connexion</button></a>
+									</li>
+						    </ul>
+						  </div>
+						</nav>
 			</header>
 			<!-- /header -->

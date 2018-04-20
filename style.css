@@ -11,9 +11,101 @@ body{
 
 /* HEADER */
 
-.header-logo{
+.navbar{
+  background-color: #FFFFFF !important;
+}
+.navbar-nav{
   position: absolute;
-  left: 0%;
+  right: 0;
+  margin-right: 50px !important;
+}
+.nav-link{
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #000000 !important;
+  margin: 0 15px;
+}
+.dropdown-item{
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.dropdown-item:hover{
+  background-color: transparent;
+}
+.dropdown-menu{
+  border-radius: 0;
+}
+.underline{
+  text-decoration: none;
+  position: relative;
+}
+.underline:after {
+  content: '';
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  width: 0%;
+  border-bottom: 2px solid #00EFBA;
+  transition: 0.4s;
+  text-align: center;
+}
+.underline:hover:after {
+  width: 50%;
+  background-color: transparent;
+}
+.header-logo{
   height: 50px;
-  margin: 12.5px;
+}
+.home-btn{
+  margin-top: -5px;
+}
+.home-btn:active{
+  background-color: transparent !important;
+  color: #391CF1 !important;
+}
+.btn{
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  background-color: #391CF1;
+  border:1px solid #391CF1;
+  transition: all ease 0.35s;
+}
+.btn-primary.focus, .btn-primary:focus {
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+.btn:hover{
+  background-color:transparent;
+  color:#391CF1;
+}
+
+/* BURGER SHOW */
+
+@media screen and (max-width: 991px){
+  .navbar-toggler{
+    border-color: transparent !important;
+  }
+  .navbar-nav{
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-right: inherit;
+  }
+  .dropdown-menu{
+    text-align: center;
+  }
+  .underline:after {
+    left: 40%;
+  }
+  .underline:hover:after {
+    width: 20%;
+  }
+  .home-btn{
+    margin-top: 0px;
+  }
 }
