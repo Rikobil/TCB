@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-body{
-  margin: 0;
-}
-
 
 /* ALL PAGES */
 .mt{
@@ -85,7 +81,10 @@ body{
   color:#391CF1;
 }
 
-/* BURGER SHOW */
+
+  /* RESPONSIVE */
+
+/* HEADER*/
 
 @media screen and (max-width: 991px){
   .navbar-toggler{
@@ -112,3 +111,5 @@ body{
     margin-top: 0px;
   }
 }
+
+coucou le css
