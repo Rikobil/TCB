@@ -35,6 +35,9 @@ body{
 .dropdown-menu{
   border-radius: 0;
 }
+ .dropdown-item:active{
+  color: #000000 !important;
+}
 .underline{
   text-decoration: none;
   position: relative;
