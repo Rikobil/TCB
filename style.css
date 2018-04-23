@@ -112,7 +112,6 @@
   }
 }
 
-<<<<<<< HEAD
 /* Slider carousel bootstrap */
 
 .carousel{
@@ -142,12 +141,38 @@
 }
 
 .carousel-inner{
-  width: 40%;
-  height: 500px;
+  width: 80%;
+  height: auto;
   margin-top: 5%;
   margin-left: 10%;
 }
 
+.carousel-item img{
+  height: 300px;
+}
+
+.carousel-item h1 {
+  margin-bottom: 1%;
+  margin-top: 0%;
+  height: 25%;
+  font-weight: bold;
+  font-size: 25pt;
+}
+
+.carousel-item p {
+  margin-top: 5%;
+  height: 42.5%;
+}
+
+.btn-carousel{
+  float: right;
+}
+
+.underline-title{
+  width: 25%;
+  height: 10px;
+  background-color: #00EFBA;
+}
 
 .carousel-control-next, .carousel-control-prev{
   background-color: #F0F5FC;
