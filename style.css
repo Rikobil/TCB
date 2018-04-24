@@ -5,6 +5,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+h1{
+  font-weight: bold;
+}
+
 /* HEADER */
 
 .navbar{
@@ -82,40 +86,10 @@
 }
 
 
-  /* RESPONSIVE */
-
-/* HEADER*/
-
-@media screen and (max-width: 991px){
-  .navbar-toggler{
-    border-color: transparent !important;
-  }
-  .navbar-nav{
-    position: absolute;
-    right: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    margin-right: inherit;
-  }
-  .dropdown-menu{
-    text-align: center;
-  }
-  .underline:after {
-    left: 40%;
-  }
-  .underline:hover:after {
-    width: 20%;
-  }
-  .home-btn{
-    margin-top: 0px;
-  }
-}
-
 /* Slider carousel bootstrap */
 
 .carousel{
-  height: 309px;
+  height: 100%;
 }
 
 .carousel-indicators{
@@ -166,6 +140,8 @@
 
 .btn-carousel{
   float: right;
+  position: relative;
+  z-index: 30;
 }
 
 .underline-title{
@@ -195,6 +171,173 @@
   margin-right: 30%;
 }
 
-/* .carousel-control-prev-icon{
-  background-color: #000000;
-} */
+/* RESERVATION DE COURT BOOKING */
+
+.ctn-booking{
+  margin-top: 5%;
+  height: auto;
+  -moz-box-shadow: 5px 5px 10px 5px #cfcfcf;
+-webkit-box-shadow: 5px 5px 10px 5px #cfcfcf;
+-o-box-shadow: 5px 5px 10px 5px #cfcfcf;
+box-shadow: 5px 5px 10px 5px #cfcfcf;
+}
+
+.row-booking{
+  width: 97.5%;
+  margin-top: 2%;
+  margin-bottom:1.5%;
+}
+
+.ctn-booking h3{
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.form-group{
+  padding: 0;
+  margin-top: 5%;
+}
+
+.form-control{
+  border-radius: 50px;
+  background-color: #F0F5FC;
+  -webkit-appearance: none;
+  border: none;
+}
+
+.btn-booking{
+  margin-top: 15%;
+}
+
+/* ACTUALITES */
+
+.ctn-actu{
+  margin-top: 5%;
+}
+
+.ctn-actu h1{
+  margin-bottom: 0;
+}
+
+.card-deck-actu{
+  margin-top: 5%;
+}
+
+.card-actu{
+  border: none;
+}
+
+.card-title{
+  margin-bottom: 0;
+}
+
+.underline-card{
+  height: 5px;
+}
+
+.card-actu .text-muted{
+  margin-top: 10%;
+}
+
+.card-actu .card-text{
+  margin-top: 5%;
+}
+
+.card-actu .card-footer{
+  background: none;
+  border: none;
+}
+
+.card-actu .card-footer a{
+  float: right;
+  color: #1B3352;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+
+.leftline{
+  text-decoration: none;
+  position: relative;
+}
+.leftline:hover{
+  text-decoration: none;
+}
+.leftline:after {
+  content: '';
+  position: absolute;
+  top: 40%;
+  right: 110%;
+  width: 20%;
+  border-bottom: 2px solid #00EFBA;
+  transition: 0.4s;
+  text-align: center;
+}
+.leftline:hover:after {
+  width: 50%;
+  background-color: transparent;
+  text-decoration: none;
+}
+/* RESPONSIVE */
+
+/* HEADER*/
+
+@media screen and (max-width: 991px){
+.navbar-toggler{
+  border-color: transparent !important;
+}
+.navbar-nav{
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin-right: inherit;
+}
+.dropdown-menu{
+  text-align: center;
+}
+.underline:after {
+  left: 40%;
+}
+.underline:hover:after {
+  width: 20%;
+}
+.home-btn{
+  margin-top: 0px;
+}
+
+}
+
+
+
+@media screen and (max-width: 660px){
+/* CAROUSEL */
+
+.carousel{
+  height: 100%;
+}
+
+.carousel-indicators{
+  margin-left: -25%;
+}
+
+/* BOOKING */
+
+.row-booking{
+  width: 100%;
+}
+
+.ctn-booking{
+  margin-top: 10%;
+}
+
+.ctn-booking h3{
+  margin-top: 5%;
+}
+
+.btn-booking{
+  margin-top: 5%;
+  margin-bottom: 2.5%;
+}
+}
