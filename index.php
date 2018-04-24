@@ -151,7 +151,7 @@ get_header(); ?>
     </div>
   </div>
   <div class="row">
-    <div class="card-deck card-deck-actu">
+    <div class="card-deck">
       <div class="card card-actu">
         <img class="card-img-top" src="http://via.placeholder.com/500x300" alt="Card image cap">
         <div class="card-body">
@@ -190,9 +190,110 @@ get_header(); ?>
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="col-12 text-center">
+      <a href="" class="btn btn-primary btn-actu">VOIR TOUTES LES ACTUALITÉS</a>
+    </div>
+  </div>
 </div>
 
+<div class="container-fluid bck-result">
+  <div class="container ctn-result">
+    <div class="row">
+      <div class="col-xs-8 col-md-4">
+        <h1>Résultats</h1>
+        <div class="underline-title"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card-deck">
+        <div class="card card-result">
+          <img class="card-img-top" src="http://via.placeholder.com/500x300" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">13/14 ans Garçons</h5>
+            <div class="underline-title underline-card"></div>
+            <small class="text-muted">Last updated 3 mins ago</small>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="leftline">VOIR PLUS</a>
+          </div>
+        </div>
+        <div class="card card-result">
+          <img class="card-img-top" src="http://via.placeholder.com/500x300" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">13/14 ans Garçons</h5>
+            <div class="underline-title underline-card"></div>
+            <small class="text-muted">Last updated 3 mins ago</small>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="leftline">VOIR PLUS</a>
+          </div>
+        </div>
+        <div class="card card-result">
+          <img class="card-img-top" src="http://via.placeholder.com/500x300/" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">13/14 ans Garçons</h5>
+            <div class="underline-title underline-card"></div>
+            <small class="text-muted">Last updated 3 mins ago</small>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="leftline">VOIR PLUS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center">
+        <a href="" class="btn btn-primary btn-actu">VOIR TOUTES LES RÉSULTATS</a>
+      </div>
+    </div>
+  </div>
+</div>
 
+<div class="container ctn-club">
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col-9 card-club">
+      <div class="row">
+          <div class="col-xs-12 col-md-6 club-text">
+            <div class="row">
+              <div class="col-10">
+                <h1>Le Club</h1>
+                <div class="underline-title"></div>
+              </div>
+            </div>
+            <div class="row">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend dui ac lorem auctor, in tristique nunc consectetur. Mauris hendrerit nunc vitae ullamcorper posuere. Aenean orci leo, scelerisque eget quam quis, vehicula dapibus ligula.</p>
+            </div>
+            <div class="row">
+              <a href="" class="btn btn-primary btn-club">VOIR LE CLUB</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <div class="row">
+              <div class="col-6 ctn-club-img">
+                <img class="club-img" src="http://via.placeholder.com/180x180" alt="">
+              </div>
+              <div class="col-6 ctn-club-img">
+                <img class="club-img" src="http://via.placeholder.com/180x180" alt="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 ctn-club-img">
+                <img class="club-img" src="http://via.placeholder.com/180x180" alt="">
+              </div>
+              <div class="col-6 ctn-club-img">
+                <img class="club-img" src="http://via.placeholder.com/180x180" alt="">
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </div>
 

@@ -7,6 +7,11 @@
 
 h1{
   font-weight: bold;
+  font-family: Montserrat;
+}
+
+body{
+  overflow-x: hidden;
 }
 
 /* HEADER */
@@ -94,8 +99,7 @@ h1{
 
 .carousel-indicators{
   margin-left: 36.5%;
-  margin-top: 2%;
-  bottom: 2px;
+  bottom: -7px;
 }
 
 .carousel-indicators li{
@@ -219,7 +223,7 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
   margin-bottom: 0;
 }
 
-.card-deck-actu{
+.card-deck{
   margin-top: 5%;
 }
 
@@ -229,6 +233,7 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
 
 .card-title{
   margin-bottom: 0;
+  font-weight: bold;
 }
 
 .underline-card{
@@ -239,16 +244,16 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
   margin-top: 10%;
 }
 
-.card-actu .card-text{
+.card-text{
   margin-top: 5%;
 }
 
-.card-actu .card-footer{
+.card-footer{
   background: none;
   border: none;
 }
 
-.card-actu .card-footer a{
+.card-footer a{
   float: right;
   color: #1B3352;
   font-weight: bold;
@@ -278,6 +283,67 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
   background-color: transparent;
   text-decoration: none;
 }
+
+.btn-actu{
+  margin-top: 2.5%;
+}
+
+/* RESULTATS */
+.bck-result{
+  background-color: #F0F5FC;
+  margin-top: 5%;
+}
+.container-fluid{
+  padding: 0px;
+}
+.ctn-result h1{
+  margin-bottom: 0;
+}
+.card-result{
+  border: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.card-result:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.btn-actu{
+  margin-bottom: 2.5%;
+}
+
+/* LE CLUB */
+.ctn-club{
+  margin-top: 5%;
+}
+.card-club{
+  -moz-box-shadow: 5px 5px 10px 5px #cfcfcf;
+-webkit-box-shadow: 5px 5px 10px 5px #cfcfcf;
+-o-box-shadow: 5px 5px 10px 5px #cfcfcf;
+box-shadow: 5px 5px 10px 5px #cfcfcf;
+}
+.card-club h1{
+  margin-bottom: 0;
+  margin-top: 15%;
+}
+.card-club p{
+  margin-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.btn-club{
+  margin-left: 5%;
+  margin-top: 15%;
+}
+.club-text{
+  padding-left: 5%;
+}
+.ctn-club-img{
+  padding: 0px;
+}
+.club-img{
+  width: 100%;
+}
+
 /* RESPONSIVE */
 
 /* HEADER*/
@@ -335,6 +401,7 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
 .ctn-booking h3{
   margin-top: 5%;
 }
+
 
 .btn-booking{
   margin-top: 5%;
