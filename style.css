@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900');
 
 /* ALL PAGES */
 .mt{
   font-family: 'Montserrat', sans-serif;
 }
 
+h1, h2, h3, h4, h5{
+  font-family: 'Montserrat', sans-serif;
+}
+
 h1{
-  font-weight: bold;
-  font-family: Montserrat;
+  font-weight: bold !important;
+  font-size: 35px;
 }
 
 body{
@@ -159,20 +163,24 @@ body{
   width: 50px;
   height: 50px;
   opacity: 1;
-  margin-top: 20%;
   z-index: 20;
+  margin-top: 10%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 
 .carousel-control-next:hover, .carousel-control-prev:hover{
   background-color: #d9e7fc ;
 }
 
-.carousel-control-prev{
+.carousel-control-prev-home{
   margin-left: 52.5%;
+  margin-top: 20%;
 }
 
-.carousel-control-next{
+.carousel-control-next-home{
   margin-right: 30%;
+  margin-top: 20%;
 }
 
 /* RESERVATION DE COURT BOOKING */
@@ -194,7 +202,8 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
 
 .ctn-booking h3{
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
+  padding-top: 5%;
 }
 
 .form-group{
@@ -342,6 +351,12 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
 }
 .club-img{
   width: 100%;
+}
+
+/* PARTENAIRE CAROUSEL */
+
+.btn-partner {
+  margin-top: 2.5%;
 }
 
 /* RESPONSIVE */
