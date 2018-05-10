@@ -6,7 +6,15 @@
 
 		jQuery(document).ready(function($){
 
+			$('#carouselExampleIndicators').carousel({
+				interval: 2000
+			})
+
+
+
 		});
 	});
+
+
 
 })(jQuery, this);

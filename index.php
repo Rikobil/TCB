@@ -3,7 +3,331 @@
 Template Name: Homepage
 */
 get_header(); ?>
+<body>
+<div class="container-fluid">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active rounded-circle"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="rounded-circle"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2" class="rounded-circle"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row">
+          <div class="carousel-img col-xs- 12 col-md-6">
+            <img class="d-block w-100" src="http://via.placeholder.com/500x300" alt="First slide">
+          </div>
+          <div class="carousel-text col-xs- 12 col-md-6">
+            <h1>
+              Réservez </br> votre cours
+            </h1>
+            <div class="underline-title"></div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend dui ac lorem auctor, in tristique nunc consectetur. Mauris hendrerit nunc vitae ullamcorper posuere.
+            </p>
+            <div class="btn btn-primary btn-carousel">
+              RÉSERVER
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+        <div class="container">
+          <div class="row">
+            <div class="carousel-img col-xs- 12 col-md-6">
+              <img class="d-block w-100" src="http://via.placeholder.com/500x300" alt="First slide">
+            </div>
+            <div class="carousel-text col-xs- 12 col-md-6">
+              <h1>
+                Réservez </br> votre cours
+              </h1>
+              <div class="underline-title"></div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend dui ac lorem auctor, in tristique nunc consectetur. Mauris hendrerit nunc vitae ullamcorper posuere.
+              </p>
+              <div class="btn btn-primary btn-carousel">
+                RÉSERVER
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row">
+          <div class="carousel-img col-xs- 12 col-md-6">
+            <img class="d-block w-100" src="http://via.placeholder.com/500x300" alt="First slide">
+          </div>
+          <div class="carousel-text col-xs- 12 col-md-6">
+            <h1>
+              Réservez </br> votre cours
+            </h1>
+            <div class="underline-title"></div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend dui ac lorem auctor, in tristique nunc consectetur. Mauris hendrerit nunc vitae ullamcorper posuere.
+            </p>
+            <div class="btn btn-primary btn-carousel">
+              RÉSERVER
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev rounded-circle carousel-control-prev-home" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next rounded-circle carousel-control-next-home" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
 
+<div class="container-fluid">
 
+  <div class="row">
+    <div class="col-1">
+    </div>
+    <div class="col-10 ctn-booking">
+      <div class="container">
+        <div class="row row-booking">
+          <div class="col-md-2">
+            <h3>Réservez </br> votre court</h3>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option selected>Date</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option selected>Heure</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option selected>Court</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-1">
+            <div class="btn btn-primary btn-booking">
+              RÉSERVER
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+<div class="container ctn-actu">
+  <div class="row">
+    <div class="col-xs-8 col-md-4">
+      <h1>Actualités</h1>
+      <div class="underline-title"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="card-deck">
+      <div class="card card-actu">
+        <img class="card-img-top" src="http://via.placeholder.com/500x300" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Tournoi de Noël</h5>
+          <div class="underline-title underline-card"></div>
+          <small class="text-muted">Last updated 3 mins ago</small>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="leftline">VOIR PLUS</a>
+        </div>
+      </div>
+      <div class="card card-actu">
+        <img class="card-img-top" src="http://via.placeholder.com/500x300" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Tournoi de Noël</h5>
+          <div class="underline-title underline-card"></div>
+          <small class="text-muted">Last updated 3 mins ago</small>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="leftline">VOIR PLUS</a>
+        </div>
+      </div>
+      <div class="card card-actu">
+        <img class="card-img-top" src="http://via.placeholder.com/500x300/" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Tournoi de Noël</h5>
+          <div class="underline-title underline-card"></div>
+          <small class="text-muted">Last updated 3 mins ago</small>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="leftline">VOIR PLUS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 text-center">
+      <a href="" class="btn btn-primary btn-actu">VOIR TOUTES LES ACTUALITÉS</a>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bck-result">
+  <div class="container ctn-result">
+    <div class="row">
+      <div class="col-xs-8 col-md-4">
+        <h1>Résultats</h1>
+        <div class="underline-title"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card-deck">
+        <div class="card card-result">
+          <img class="card-img-top" src="http://via.placeholder.com/500x300" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">13/14 ans Garçons</h5>
+            <div class="underline-title underline-card"></div>
+            <small class="text-muted">Last updated 3 mins ago</small>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="leftline">VOIR PLUS</a>
+          </div>
+        </div>
+        <div class="card card-result">
+          <img class="card-img-top" src="http://via.placeholder.com/500x300" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">13/14 ans Garçons</h5>
+            <div class="underline-title underline-card"></div>
+            <small class="text-muted">Last updated 3 mins ago</small>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="leftline">VOIR PLUS</a>
+          </div>
+        </div>
+        <div class="card card-result">
+          <img class="card-img-top" src="http://via.placeholder.com/500x300/" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">13/14 ans Garçons</h5>
+            <div class="underline-title underline-card"></div>
+            <small class="text-muted">Last updated 3 mins ago</small>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="leftline">VOIR PLUS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center">
+        <a href="" class="btn btn-primary btn-actu">VOIR TOUTES LES RÉSULTATS</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container ctn-club">
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10 card-club">
+      <div class="row">
+          <div class="col-xs-12 col-md-6 club-text">
+            <div class="row">
+              <div class="col-10">
+                <h1>Le Club</h1>
+                <div class="underline-title"></div>
+              </div>
+            </div>
+            <div class="row">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend dui ac lorem auctor, in tristique nunc consectetur. Mauris hendrerit nunc vitae ullamcorper posuere. Aenean orci leo, scelerisque eget quam quis, vehicula dapibus ligula.</p>
+            </div>
+            <div class="row">
+              <a href="" class="btn btn-primary btn-club">VOIR LE CLUB</a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <div class="row">
+              <div class="col-6 ctn-club-img">
+                <img class="club-img" src="http://via.placeholder.com/180x180" alt="">
+              </div>
+              <div class="col-6 ctn-club-img">
+                <img class="club-img" src="http://via.placeholder.com/180x180" alt="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 ctn-club-img">
+                <img class="club-img" src="http://via.placeholder.com/180x180" alt="">
+              </div>
+              <div class="col-6 ctn-club-img">
+                <img class="club-img" src="http://via.placeholder.com/180x180" alt="">
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid text-center my-3">
+    <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+        <div class="carousel-inner w-82" role="listbox">
+            <div class="carousel-item row active">
+                <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/150x150/222/fff?text=1"></div>
+                <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/150x150/444?text=2"></div>
+                <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/150x150/888?text=3"></div>
+                <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/150x150/333?text=4"></div>
+            </div>
+            <div class="carousel-item row ">
+                <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/150x150?text=5"></div>
+                <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/150x150/555?text=6"></div>
+                <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/150x150/333/fff?text=7"></div>
+                <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/150x150/888?text=8"></div>
+            </div>
+        </div>
+        <a class="carousel-control-prev rounded-circle" href="#recipeCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next rounded-circle" href="#recipeCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center">
+        <a href="" class="btn btn-primary btn-partner">VOIR LES PARTENAIRES</a>
+      </div>
+    </div>
+</div>
+
+</div>
+
+</body>
 <?php get_footer(); ?>

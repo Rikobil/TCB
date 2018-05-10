@@ -1,8 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900');
 
 /* ALL PAGES */
 .mt{
   font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+  font-weight: bold !important;
+  font-size: 35px;
+}
+
+body{
+  overflow-x: hidden;
 }
 
 /* HEADER */
@@ -82,11 +95,276 @@
 }
 
 
-  /* RESPONSIVE */
+/* Slider carousel bootstrap */
+
+.carousel{
+  height: 100%;
+}
+
+.carousel-indicators{
+  margin-left: 36.5%;
+  bottom: -7px;
+}
+
+.carousel-indicators li{
+  background-color: #00EFBA;
+  width: 20px;
+  height: 20px;
+  margin-left: 2%;
+  cursor: pointer;
+}
+
+.carousel-indicators li:hover{
+  background-color: #391CF1;
+}
+
+.carousel-indicators .active{
+  background-color: #391CF1;
+}
+
+.carousel-inner{
+  width: 80%;
+  height: auto;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.carousel-item img{
+  height: 300px;
+}
+
+.carousel-item h1 {
+  margin-bottom: 1%;
+  margin-top: 0%;
+  height: 25%;
+  font-weight: bold;
+  font-size: 25pt;
+}
+
+.carousel-item p {
+  margin-top: 5%;
+  height: 42.5%;
+}
+
+.btn-carousel{
+  float: right;
+  position: relative;
+  z-index: 30;
+}
+
+.underline-title{
+  width: 25%;
+  height: 10px;
+  background-color: #00EFBA;
+}
+
+.carousel-control-next, .carousel-control-prev{
+  background-color: #F0F5FC;
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+  z-index: 20;
+  margin-top: 10%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.carousel-control-next:hover, .carousel-control-prev:hover{
+  background-color: #d9e7fc ;
+}
+
+.carousel-control-prev-home{
+  margin-left: 52.5%;
+  margin-top: 20%;
+}
+
+.carousel-control-next-home{
+  margin-right: 30%;
+  margin-top: 20%;
+}
+
+/* RESERVATION DE COURT BOOKING */
+
+.ctn-booking{
+  margin-top: 5%;
+  height: auto;
+  -moz-box-shadow: 5px 5px 10px 5px #cfcfcf;
+-webkit-box-shadow: 5px 5px 10px 5px #cfcfcf;
+-o-box-shadow: 5px 5px 10px 5px #cfcfcf;
+box-shadow: 5px 5px 10px 5px #cfcfcf;
+}
+
+.row-booking{
+  width: 97.5%;
+  margin-top: 2%;
+  margin-bottom:1.5%;
+}
+
+.ctn-booking h3{
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 5%;
+}
+
+.form-group{
+  padding: 0;
+  margin-top: 5%;
+}
+
+.form-control{
+  border-radius: 50px;
+  background-color: #F0F5FC;
+  -webkit-appearance: none;
+  border: none;
+}
+
+.btn-booking{
+  margin-top: 15%;
+}
+
+/* ACTUALITES */
+
+.ctn-actu{
+  margin-top: 5%;
+}
+
+.ctn-actu h1{
+  margin-bottom: 0;
+}
+
+.card-deck{
+  margin-top: 5%;
+}
+
+.card-actu{
+  border: none;
+}
+
+.card-title{
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.underline-card{
+  height: 5px;
+}
+
+.card-actu .text-muted{
+  margin-top: 10%;
+}
+
+.card-text{
+  margin-top: 5%;
+}
+
+.card-footer{
+  background: none;
+  border: none;
+}
+
+.card-footer a{
+  float: right;
+  color: #1B3352;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+
+.leftline{
+  text-decoration: none;
+  position: relative;
+}
+.leftline:hover{
+  text-decoration: none;
+}
+.leftline:after {
+  content: '';
+  position: absolute;
+  top: 40%;
+  right: 110%;
+  width: 20%;
+  border-bottom: 2px solid #00EFBA;
+  transition: 0.4s;
+  text-align: center;
+}
+.leftline:hover:after {
+  width: 50%;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.btn-actu{
+  margin-top: 2.5%;
+}
+
+/* RESULTATS */
+.bck-result{
+  background-color: #F0F5FC;
+  margin-top: 5%;
+}
+.container-fluid{
+  padding: 0px;
+}
+.ctn-result h1{
+  margin-bottom: 0;
+}
+.card-result{
+  border: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.card-result:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.btn-actu{
+  margin-bottom: 2.5%;
+}
+
+/* LE CLUB */
+.ctn-club{
+  margin-top: 5%;
+}
+.card-club{
+  -moz-box-shadow: 5px 5px 10px 5px #cfcfcf;
+-webkit-box-shadow: 5px 5px 10px 5px #cfcfcf;
+-o-box-shadow: 5px 5px 10px 5px #cfcfcf;
+box-shadow: 5px 5px 10px 5px #cfcfcf;
+}
+.card-club h1{
+  margin-bottom: 0;
+  margin-top: 15%;
+}
+.card-club p{
+  margin-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.btn-club{
+  margin-left: 5%;
+  margin-top: 15%;
+}
+.club-text{
+  padding-left: 5%;
+}
+.ctn-club-img{
+  padding: 0px;
+}
+.club-img{
+  width: 100%;
+}
+
+/* PARTENAIRE CAROUSEL */
+
+.btn-partner {
+  margin-top: 2.5%;
+}
+
+/* RESPONSIVE */
 
 /* HEADER*/
 
 @media screen and (max-width: 991px){
+<<<<<<< HEAD
   .navbar-toggler{
     border-color: transparent !important;
   }
@@ -110,4 +388,64 @@
   .home-btn{
     margin-top: 0px;
   }
+=======
+.navbar-toggler{
+  border-color: transparent !important;
+}
+.navbar-nav{
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin-right: inherit;
+}
+.dropdown-menu{
+  text-align: center;
+}
+.underline:after {
+  left: 40%;
+}
+.underline:hover:after {
+  width: 20%;
+}
+.home-btn{
+  margin-top: 0px;
+}
+
+}
+
+
+
+@media screen and (max-width: 660px){
+/* CAROUSEL */
+
+.carousel{
+  height: 100%;
+}
+
+.carousel-indicators{
+  margin-left: -25%;
+}
+
+/* BOOKING */
+
+.row-booking{
+  width: 100%;
+}
+
+.ctn-booking{
+  margin-top: 10%;
+}
+
+.ctn-booking h3{
+  margin-top: 5%;
+}
+
+
+.btn-booking{
+  margin-top: 5%;
+  margin-bottom: 2.5%;
+}
+>>>>>>> dc9ac204b50fd8050e8ac474c3ad8afef9140656
 }
