@@ -16,15 +16,15 @@ get_header(); ?>
       <div class="container">
         <div class="row">
           <div class="carousel-img col-xs- 12 col-md-6">
-            <img class="d-block w-100" src="http://via.placeholder.com/500x300" alt="First slide">
+            <img class="d-block w-100" src="<?php the_field("image_slide_1")?>" alt="First slide">
           </div>
           <div class="carousel-text col-xs- 12 col-md-6">
             <h1>
-              Réservez </br> votre cours
+              <?php the_field("titre_slide_1")?>
             </h1>
             <div class="underline-title"></div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend dui ac lorem auctor, in tristique nunc consectetur. Mauris hendrerit nunc vitae ullamcorper posuere.
+              <?php the_field("description_slide_1")?>
             </p>
             <div class="btn btn-primary btn-carousel">
               RÉSERVER
@@ -38,15 +38,15 @@ get_header(); ?>
         <div class="container">
           <div class="row">
             <div class="carousel-img col-xs- 12 col-md-6">
-              <img class="d-block w-100" src="http://via.placeholder.com/500x300" alt="First slide">
+              <img class="d-block w-100" src="<?php the_field("image_slide_2")?>" alt="First slide">
             </div>
             <div class="carousel-text col-xs- 12 col-md-6">
               <h1>
-                Réservez </br> votre cours
+                <?php the_field("titre_slide_2")?>
               </h1>
               <div class="underline-title"></div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend dui ac lorem auctor, in tristique nunc consectetur. Mauris hendrerit nunc vitae ullamcorper posuere.
+                <?php the_field("description_slide_2")?>
               </p>
               <div class="btn btn-primary btn-carousel">
                 RÉSERVER
@@ -60,15 +60,15 @@ get_header(); ?>
       <div class="container">
         <div class="row">
           <div class="carousel-img col-xs- 12 col-md-6">
-            <img class="d-block w-100" src="http://via.placeholder.com/500x300" alt="First slide">
+            <img class="d-block w-100" src="<?php the_field("image_slide_3")?>" alt="First slide">
           </div>
           <div class="carousel-text col-xs- 12 col-md-6">
             <h1>
-              Réservez </br> votre cours
+              <?php the_field("titre_slide_3")?>
             </h1>
             <div class="underline-title"></div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend dui ac lorem auctor, in tristique nunc consectetur. Mauris hendrerit nunc vitae ullamcorper posuere.
+              <?php the_field("description_slide_3")?>
             </p>
             <div class="btn btn-primary btn-carousel">
               RÉSERVER
@@ -151,44 +151,41 @@ get_header(); ?>
     </div>
   </div>
   <div class="row">
-    <div class="card-deck">
-      <div class="card card-actu">
-        <img class="card-img-top" src="http://via.placeholder.com/500x300" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Tournoi de Noël</h5>
-          <div class="underline-title underline-card"></div>
-          <small class="text-muted">Last updated 3 mins ago</small>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-        <div class="card-footer">
-          <a href="#" class="leftline">VOIR PLUS</a>
-        </div>
-      </div>
-      <div class="card card-actu">
-        <img class="card-img-top" src="http://via.placeholder.com/500x300" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Tournoi de Noël</h5>
-          <div class="underline-title underline-card"></div>
-          <small class="text-muted">Last updated 3 mins ago</small>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-        </div>
-        <div class="card-footer">
-          <a href="#" class="leftline">VOIR PLUS</a>
-        </div>
-      </div>
-      <div class="card card-actu">
-        <img class="card-img-top" src="http://via.placeholder.com/500x300/" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Tournoi de Noël</h5>
-          <div class="underline-title underline-card"></div>
-          <small class="text-muted">Last updated 3 mins ago</small>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-        </div>
-        <div class="card-footer">
-          <a href="#" class="leftline">VOIR PLUS</a>
-        </div>
-      </div>
-    </div>
+
+      <section class="card-deck">
+
+        <?php
+          $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+          $query = new WP_Query( array(
+            'post_type'			=> 'actualite',
+            'posts_per_page'	=> 3,
+            'orderby'			=> 'date',
+            'order'				=> 'DESC',
+              'paged' => $paged
+          ) );
+      ?>
+
+      <?php if ( $query->have_posts() ) : ?>
+
+      <!-- begin loop -->
+      <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+
+          <article class="card card-actu">
+            <a href="<?php the_permalink()?>"><img class="card-img-top" src="<?php the_field("image_actualite")?>" alt="Card image cap"></a>
+            <div class="card-body">
+              <h5 class="card-title"><?php the_title()?> </h5>
+              <div class="underline-title underline-card"></div>
+              <small class="text-muted">Last updated 3 mins ago</small>
+              <p class="card-text"><?php the_content()?></p>
+            </div>
+            <div class="card-footer">
+              <a href="<?php the_permalink()?>" class="leftline">VOIR PLUS</a>
+            </div>
+          </article>
+
+      <?php endwhile; ?>
+      <?php endif; ?>
+    </section>
   </div>
   <div class="row">
     <div class="col-12 text-center">
@@ -207,42 +204,40 @@ get_header(); ?>
     </div>
     <div class="row">
       <div class="card-deck">
-        <div class="card card-result">
-          <img class="card-img-top" src="http://via.placeholder.com/500x300" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">13/14 ans Garçons</h5>
-            <div class="underline-title underline-card"></div>
-            <small class="text-muted">Last updated 3 mins ago</small>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="leftline">VOIR PLUS</a>
-          </div>
-        </div>
-        <div class="card card-result">
-          <img class="card-img-top" src="http://via.placeholder.com/500x300" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">13/14 ans Garçons</h5>
-            <div class="underline-title underline-card"></div>
-            <small class="text-muted">Last updated 3 mins ago</small>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="leftline">VOIR PLUS</a>
-          </div>
-        </div>
-        <div class="card card-result">
-          <img class="card-img-top" src="http://via.placeholder.com/500x300/" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">13/14 ans Garçons</h5>
-            <div class="underline-title underline-card"></div>
-            <small class="text-muted">Last updated 3 mins ago</small>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="leftline">VOIR PLUS</a>
-          </div>
-        </div>
+        <section class="card-deck">
+
+          <?php
+            $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+            $query = new WP_Query( array(
+              'post_type'			=> 'resultat',
+              'posts_per_page'	=> 3,
+              'orderby'			=> 'date',
+              'order'				=> 'DESC',
+                'paged' => $paged
+            ) );
+        ?>
+
+        <?php if ( $query->have_posts() ) : ?>
+
+        <!-- begin loop -->
+        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+
+          <article class="card card-result">
+            <img class="card-img-top" src="http://via.placeholder.com/500x300/" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title"><?php the_field("categorie")?></h5>
+              <div class="underline-title underline-card"></div>
+              <small class="text-muted"><?php the_field("division")?> - <?php the_field("poule")?><br></small>
+              <small class="text-muted"><?php the_field("date_du_match")?></small>
+            </div>
+            <div class="card-footer">
+              <a href="<?php the_permalink()?>" class="leftline">VOIR PLUS</a>
+            </div>
+          </article>
+
+        <?php endwhile; ?>
+        <?php endif; ?>
+      </section>
       </div>
     </div>
     <div class="row">
