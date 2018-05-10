@@ -1,17 +1,18 @@
 			<!-- footer -->
 			<footer class="mt footer" role="contentinfo">
-				<div class="title">
-					<h3 class="bigtitle">SUIVEZ-NOUS</h3>
-					<div class="bigtitle-underline"></div>
+				<div class="footer-title">
+					<h3 class="card-title">SUIVEZ-NOUS</h3>
+					<div class="underline-title footer-title-underline"></div>
 				</div>
 				<div class="footer-rs">
 					<a class="footer-facebook" target="_blank" href="https://www.facebook.com/Tennis-Club-Bouliac-151002651635060/"><i class="fab fa-facebook-f"></i></a>
 					<a class="footer-twitter" target="_blank" href="https://twitter.com/TennisBouliac"><i class="fab fa-twitter"></i></a>
+					<a class="footer-instagram" target="_blank" href="https://twitter.com/TennisBouliac"><i class="fab fa-instagram"></i></a>
 				</div>
 				<div class="footer-mentions">
 					<p>© Tennis Club de Bouliac</p>
-					<a class="footer-underline" href="http://localhost:8888/TCB/mentions-legales/"><p>Mentions légales</p></a>
-					<a class="footer-underline" href="http://localhost:8888/TCB/contact/"><p>Contact</p></a>
+					<a href="http://localhost:8888/TCB/mentions-legales/"><p>Mentions légales</p></a>
+					<a href="http://localhost:8888/TCB/contact/"><p>Contact</p></a>
 				</div>
 			</footer>
 			<!-- /footer -->
