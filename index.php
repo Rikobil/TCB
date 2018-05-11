@@ -59,10 +59,10 @@ get_header(); ?>
     <div class="carousel-item">
       <div class="container">
         <div class="row">
-          <div class="carousel-img col-xs- 12 col-md-6">
+          <div class="carousel-img col-xs-12 col-md-6">
             <img class="d-block w-100" src="<?php the_field("image_slide_3")?>" alt="First slide">
           </div>
-          <div class="carousel-text col-xs- 12 col-md-6">
+          <div class="carousel-text col-xs-12 col-md-6">
             <h1>
               <?php the_field("titre_slide_3")?>
             </h1>
