@@ -235,6 +235,8 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
 
 .card-deck{
   margin-top: 5%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .card-actu{
@@ -244,6 +246,7 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
 .card-title{
   margin-bottom: 0;
   font-weight: bold;
+  padding: 0;
 }
 
 .underline-card{

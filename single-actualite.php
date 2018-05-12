@@ -17,22 +17,19 @@ get_header(); ?>
         <img class="col-md-12" src="<?php the_field("image_actualite")?>" alt="">
       </div>
       <div class="col-md-6">
-        <div class="col-md-6">
-          <h5 class="card-title">Intégrer php</h5>
-          <div class="underline-title underline-card"></div>
-        </div>
         <div class="cold-md-12">
           <?php the_post(); the_content() ?>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 single-actualite-underline">
+        <h5 class="card-title">Partager</h5>
         <div class="underline-title underline-card"></div>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 single-actualite-rs footer-rs">
         <a class="footer-facebook" target="_blank" href="https://www.facebook.com/Tennis-Club-Bouliac-151002651635060/"><i class="fab fa-facebook-f"></i></a>
         <a class="footer-twitter" target="_blank" href="https://twitter.com/TennisBouliac"><i class="fab fa-twitter"></i></a>
       </div>

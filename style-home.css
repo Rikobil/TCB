@@ -7,8 +7,9 @@ a{
 /* FOOTER */
 
 footer{
-  height: 300px;
   background-color: #F0F5FC;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 footer h3{
   padding-top: 25px;
@@ -80,6 +81,9 @@ footer h3{
 .single-actualite{
   margin-top:50px;
 }
+.ctn-single-actualite img{
+  padding: 0;
+}
 .card-single-actu{
   background-color: transparent;
 }
@@ -88,4 +92,11 @@ footer h3{
 }
 .single-actualite-bottom h1{
   margin-bottom: 0;
+}
+.single-actualite-underline{
+  margin-top: 20px;
+}
+.single-actualite-rs{
+  margin-top: 20px;
+  text-align: left !important;
 }
