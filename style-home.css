@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+a{
+  text-decoration: none;
+  color:#000000;
+}
+
+/* FOOTER */
+
+footer{
+  height: 300px;
+  background-color: #F0F5FC;
+}
+footer h3{
+  padding-top: 25px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.footer-title{
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+.footer-title-underline{
+  display: block;
+  margin: 0 auto;
+}
+.footer-rs{
+  margin-top: 20px;
+  text-align: center;
+}
+.footer-rs a{
+  padding: 0 5px;
+}
+.footer-rs i{
+  font-size: 30px;
+}
+.footer-facebook:hover{
+  color:#3b5998;
+}
+.footer-twitter:hover{
+  color:#00aced;
+}
+.footer-instagram:hover{
+  color:#DF633E;
+}
+.footer-mentions{
+  text-align: center;
+  margin-top: 20px;
+}
+.footer-mentions a{
+  text-decoration: none;
+}
+.footer-mentions p{
+  display: inline-block;
+  padding: 0 20px;
+  transition: all ease 0.35s;
+}
+.footer-mentions a:hover{
+  color:#391CF1;
+}
+
+@media screen and (max-width :768px){
+  .footer-title{
+    width: 60%;
+  }
+  .footer-mentions p{
+    display: block;
+  }
+}
+
+/* SINGLE-ACTUALITE */
+
+.ctn-single-actualite article{
+  background-color: red;
+  height: 50px;
+}
+.ctn-single-actualite h1{
+  margin-bottom: 0;
+}
+.single-actualite{
+  margin-top:50px;
+}
+.card-single-actu{
+  background-color: transparent;
+}
+.single-actualite-bottom{
+  padding-bottom: 50px;
+}
+.single-actualite-bottom h1{
+  margin-bottom: 0;
+}
