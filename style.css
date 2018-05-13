@@ -692,7 +692,11 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
 
 .carousel-item{
   margin-bottom: 25%;
-  height: 600px;
+  height: auto;
+}
+
+.carousel-item p{
+  height: 20%;
 }
 
 .carousel-item-part{
@@ -760,7 +764,11 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
   margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
 .row-card-result{
+=======
+.row-card-responsive{
+>>>>>>> 4de3ac1ba9f8445440a50cda290f45af23ad1f01
   margin-left: 0;
   margin-right: 0;
 }

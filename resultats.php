@@ -11,8 +11,13 @@ get_header(); ?>
       <div class="underline-title"></div>
     </div>
   </div>
+<<<<<<< HEAD
   <div class="row row-card-result">
         <section class="card card-resultat col-md-12">
+=======
+  <div class="row row-card-responsive">
+        <section class="card card-resultat col-12">
+>>>>>>> 4de3ac1ba9f8445440a50cda290f45af23ad1f01
 
       <?php
         $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
