@@ -101,7 +101,7 @@ body{
 .carousel{
   height: 100%;
 }
-
+/*
 .carousel-indicators{
   margin-left: 36.5%;
   bottom: -7px;
@@ -122,7 +122,7 @@ body{
 .carousel-indicators .active{
   background-color: #391CF1;
 }
-
+*/
 .carousel-inner{
   width: 80%;
   height: auto;
@@ -183,6 +183,18 @@ body{
   margin-right: 30%;
   margin-top: 20%;
 }
+.carousel-dots{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.carousel-nextprev{
+  position: relative;
+}
+.carousel-dots ol{
+  position: relative;
+  bottom: 0;
+}
 
 /* RESERVATION DE COURT BOOKING */
 
@@ -238,7 +250,15 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
   padding-left: 15px;
   padding-right: 15px;
 }
-
+.card{
+  min-width: 30%;
+  max-width: 30%;
+}
+.card-img-top{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
 .card-actu{
   border: none;
 }
@@ -415,12 +435,237 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
   margin-bottom: 5%;
 }
 
-/* RESPONSIVE */
+
+.top-carrousel{
+  position: relative;
+}
+.carrousel-inner h1{
+  margin: 0;
+}
+.carrousel-text{
+  margin-top: 10px;
+}
+.carrousel-btn{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.carousel-indicators{
+  position: absolute;
+  width: 20%;
+  margin: 0 0 10px 0;
+  position: absolute;
+  left: 20%;
+  bottom: 13px;
+}
+.carousel-indicators li{
+  margin: 0 10px;
+}
+.carrousel-dots {
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+.carrousel-prevnext-div{
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+}
+.carousel-control-next {
+    background-color: #F0F5FC;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    z-index: 20;
+    margin: 0;
+    margin-top: 50px;
+    bottom: 10px;
+    position: absolute;
+    left: 40%;
+}
+.carousel-control-prev{
+    background-color: #F0F5FC;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    z-index: 20;
+    margin: 0;
+    margin-top: 50px;
+    bottom: 10px;
+    position: absolute;
+    left: 13%;
+}
+.carrousel-prevnext{
+  position: absolute;
+  background-color: #F0F5FC;
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+  z-index: 20;
+}
+.carousel-indicators li{
+  background-color: #00EFBA;
+  width: 20px;
+  height: 20px;
+  margin-left: 2%;
+  cursor: pointer;
+}
+
+.carousel-indicators li:hover{
+  background-color: #391CF1;
+}
+
+.carousel-indicators .active{
+  background-color: #391CF1;
+}
+
+/* ACTUALITÉS */
+
+.actualites-pagination{
+  text-align: center;
+  display: block;
+  margin: 20px auto 20px;
+}
+.page-numbers {
+    background-color: #00EFBA;
+    font-size: 12px;
+    padding: 5px 9px;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all ease 0.35s;
+}
+.page-numbers:hover{
+  background-color: #391CF1;
+  color:#FFFFFF;
+  text-decoration: none;
+}
+.current{
+  background-color: #391CF1;
+  color: #FFFFFF;
+}
+.prev, .next{
+  font-size:16px !important;
+  background-color: transparent;
+  position: relative;
+  bottom: -5px;
+  transition: all ease 0.35s;
+}
+.prev:hover ,.next:hover{
+  color:#391CF1;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+
+/* RESULTATS */
+
+.card-resultat{
+  min-width: 100% !important;
+  max-width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.card-resultat-title{
+  text-align: center;
+}
+.underline-resultat{
+  display: block;
+  margin:0 auto;
+  width: 15%;
+}
+.resultat-top{
+  margin-top: 10px;
+}
+.resultat-bot{
+  margin-bottom: 10px;
+}
+.resultat-line{
+  height: 100%;
+  width: 1px;
+  background-color:#00EFBA;
+  display: block;
+  margin: 0 auto;
+}
+.resultat-equipe{
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.resultat-joueur{
+  margin: 5px 0;
+  font-size: 14px;
+}
+.resultat-score{
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* CONTACT */
+
+.card-contact{
+  width: 100% !important;
+  min-width: 80% !important;
+  display: block;
+  margin: 20px auto 20px;
+}
+.contact-form{
+  text-align: center;
+  margin-top: 20px;
+}
+.wpcf7{
+  width: 100%;
+}
+.wpcf7-form-control-wrap input{
+  width: 80%;
+  background-color: #F0F5FC;
+  border-radius: 50px;
+  border:none;
+  height: 43px;
+  padding-left: 20px;
+}
+.wpcf7-textarea{
+  height: 200px;
+  padding-left: 20px;
+  background-color: #F0F5FC;
+  border-radius: 10px;
+  border:none;
+}
+.wpcf7-submit{
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  background-color: #391CF1;
+  border:1px solid #391CF1;
+  transition: all ease 0.35s;
+  color:#FFFFFF;
+}
+.wpcf7-submit:hover{
+  background-color:transparent;
+  color:#391CF1;
+}
+.contact-infos{
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 2;
+}
+.contact-map{
+  display: block;
+  margin: 20px auto;
+
+}
+                  /* RESPONSIVE */
+                  /* RESPONSIVE */
+                  /* RESPONSIVE */
 
 /* HEADER*/
 
 @media screen and (max-width: 991px){
-<<<<<<< HEAD
   .navbar-toggler{
     border-color: transparent !important;
   }
@@ -444,7 +689,6 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
   .home-btn{
     margin-top: 0px;
   }
-=======
 .navbar-toggler{
   border-color: transparent !important;
 }
@@ -468,7 +712,10 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
 .home-btn{
   margin-top: 0px;
 }
-
+.card{
+  min-width: 29%;
+  max-width: 29%;
+}
 }
 
 
@@ -503,5 +750,18 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
   margin-top: 5%;
   margin-bottom: 2.5%;
 }
->>>>>>> dc9ac204b50fd8050e8ac474c3ad8afef9140656
+
+.card{
+  min-width: 100%;
+  max-width: 100%;
+}
+
+/* RESULTATS */
+
+.resultat-line{
+  height: 1px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
 }

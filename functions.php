@@ -452,7 +452,13 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
     return '<h2>' . $content . '</h2>';
 }
 
-
+function my_custom_query( $posts_per_page = 10 ) {
+  $args = array(
+    'posts_per_page' => $posts_per_page,
+    // other args here
+  );
+  return new WP_Query( $args );
+}
 
 
 
