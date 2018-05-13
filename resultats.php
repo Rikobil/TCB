@@ -11,7 +11,7 @@ get_header(); ?>
       <div class="underline-title"></div>
     </div>
   </div>
-  <div class="row">
+  <div class="row row-card-result">
         <section class="card card-resultat col-md-12">
 
       <?php

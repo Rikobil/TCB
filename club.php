@@ -31,7 +31,7 @@ get_header(); ?>
           <li data-target="#carouselExampleIndicators" data-slide-to="2" class="rounded-circle"></li>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item carousel-item-court active">
             <div class="container">
               <div class="row">
                 <div class="carousel-img col-xs- 12 col-md-6">
@@ -52,7 +52,7 @@ get_header(); ?>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item carousel-item-court">
             <div class="container">
               <div class="container">
                 <div class="row">
@@ -75,7 +75,7 @@ get_header(); ?>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item carousel-item-court">
             <div class="container">
               <div class="row">
                 <div class="carousel-img col-xs-12 col-md-6">
