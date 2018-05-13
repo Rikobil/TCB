@@ -159,13 +159,17 @@ body{
   background-color: #00EFBA;
 }
 
+.carousel-control-ctn{
+  position: relative;
+}
+
 .carousel-control-next, .carousel-control-prev{
+  position: absolute;
   background-color: #F0F5FC;
   width: 50px;
   height: 50px;
   opacity: 1;
   z-index: 20;
-  margin-top: 10%;
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
@@ -176,12 +180,12 @@ body{
 
 .carousel-control-prev-home{
   margin-left: 52.5%;
-  margin-top: 20%;
+  top: -45px;
 }
 
 .carousel-control-next-home{
   margin-right: 30%;
-  margin-top: 20%;
+  top: -45px;
 }
 .carousel-dots{
   position: absolute;
@@ -385,7 +389,7 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
 
 
 
-            /* CLUB */
+/* CLUB */
 
 /* background img */
 
@@ -417,10 +421,15 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
 
 .horaire h2{
   text-align: center;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold !important;
 }
-
+.p-5{
+  padding: 0 25px !important;
+}
+.justify-content-center{
+  margin: 20px auto;
+}
 .horaire p{
   text-align: center;
 }
@@ -479,6 +488,10 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
   max-width: 100%;
   text-align: center;
   margin-top: 20px;
+  -moz-box-shadow: 5px 5px 10px 5px #cfcfcf;
+    -webkit-box-shadow: 5px 5px 10px 5px #cfcfcf;
+    -o-box-shadow: 5px 5px 10px 5px #cfcfcf;
+    box-shadow: 5px 5px 10px 5px #cfcfcf;
 }
 .card-resultat-title{
   text-align: center;
@@ -521,6 +534,10 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
   min-width: 80% !important;
   display: block;
   margin: 20px auto 20px;
+  -moz-box-shadow: 5px 5px 10px 5px #cfcfcf;
+    -webkit-box-shadow: 5px 5px 10px 5px #cfcfcf;
+    -o-box-shadow: 5px 5px 10px 5px #cfcfcf;
+    box-shadow: 5px 5px 10px 5px #cfcfcf;
 }
 .contact-form{
   text-align: center;
@@ -589,6 +606,9 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
   color: #FFFFFF;
   display: block;
   margin: 20px auto;
+}
+.btn-404:hover{
+  text-decoration: none;
 }
 
 /* MENTIONS */
@@ -664,8 +684,25 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
   height: 100%;
 }
 
+.carousel-item{
+  margin-bottom: 25%;
+  height: 600px;
+}
+
+.carousel-item h1 {
+  height: auto;
+}
+
 .carousel-indicators{
   margin-left: -25%;
+}
+
+.carousel-control-next-home{
+  margin-right: 40%;
+}
+
+.carousel-control-prev-home{
+  margin-left: 15px;
 }
 
 /* BOOKING */

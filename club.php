@@ -97,14 +97,16 @@ get_header(); ?>
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev rounded-circle carousel-control-prev-home" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next rounded-circle carousel-control-next-home" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        <div class="carousel-control-ctn">
+          <a class="carousel-control-prev rounded-circle carousel-control-prev-home" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next rounded-circle carousel-control-next-home" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
   </div>
 
@@ -120,31 +122,31 @@ get_header(); ?>
         <div class="d-flex flex-row justify-content-center flex-wrap">
           <div class="p-5">
             <h2>Lundi</h2>
-            <p>Fermé</p>
+            <p><?php the_field('ouverture_lundi') ?> - <?php the_field('fermeture_lundi') ?></p>
           </div>
           <div class="p-5">
             <h2>Mardi</h2>
-            <p>17H - 20H</p>
+            <p><?php the_field('ouverture_mardi') ?> - <?php the_field('fermeture_mardi') ?></p>
           </div>
           <div class="p-5">
             <h2>Mercredi</h2>
-            <p>17H - 20H</p>
+            <p><?php the_field('ouverture_mercredi') ?> - <?php the_field('fermeture_mercredi') ?></p>
           </div>
           <div class="p-5">
             <h2>Jeudi</h2>
-            <p>17H - 20H</p>
+            <p><?php the_field('ouverture_jeudi') ?> - <?php the_field('fermeture_jeudi') ?></p>
           </div>
           <div class="p-5">
             <h2>Vendredi</h2>
-            <p>17H - 20H</p>
+            <p><?php the_field('ouverture_vendredi') ?> - <?php the_field('fermeture_vendredi') ?></p>
           </div>
           <div class="p-5">
             <h2>Samedi</h2>
-            <p>17H - 20H</p>
+            <p><?php the_field('ouverture_samedi') ?> - <?php the_field('fermeture_samedi') ?></p>
           </div>
           <div class="p-5">
             <h2>Dimanche</h2>
-            <p>Fermé</p>
+            <p><?php the_field('ouverture_dimanche') ?> - <?php the_field('fermeture_dimanche') ?></p>
           </div>
         </div>
       </div>
