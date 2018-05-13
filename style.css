@@ -385,7 +385,7 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
 
 
 
-            /* CLUB */
+/* CLUB */
 
 /* background img */
 
@@ -417,10 +417,15 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
 
 .horaire h2{
   text-align: center;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold !important;
 }
-
+.p-5{
+  padding: 0 25px !important;
+}
+.justify-content-center{
+  margin: 20px auto;
+}
 .horaire p{
   text-align: center;
 }
@@ -479,6 +484,10 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
   max-width: 100%;
   text-align: center;
   margin-top: 20px;
+  -moz-box-shadow: 5px 5px 10px 5px #cfcfcf;
+    -webkit-box-shadow: 5px 5px 10px 5px #cfcfcf;
+    -o-box-shadow: 5px 5px 10px 5px #cfcfcf;
+    box-shadow: 5px 5px 10px 5px #cfcfcf;
 }
 .card-resultat-title{
   text-align: center;
@@ -521,6 +530,10 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
   min-width: 80% !important;
   display: block;
   margin: 20px auto 20px;
+  -moz-box-shadow: 5px 5px 10px 5px #cfcfcf;
+    -webkit-box-shadow: 5px 5px 10px 5px #cfcfcf;
+    -o-box-shadow: 5px 5px 10px 5px #cfcfcf;
+    box-shadow: 5px 5px 10px 5px #cfcfcf;
 }
 .contact-form{
   text-align: center;
@@ -589,6 +602,9 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
   color: #FFFFFF;
   display: block;
   margin: 20px auto;
+}
+.btn-404:hover{
+  text-decoration: none;
 }
 
 /* MENTIONS */
