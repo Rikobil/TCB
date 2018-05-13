@@ -137,7 +137,7 @@ body{
 .carousel-item h1 {
   margin-bottom: 1%;
   margin-top: 0%;
-  height: 25%;
+  height: 15%;
   font-weight: bold;
   font-size: 25pt;
 }
@@ -387,6 +387,10 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
   margin-top: 2.5%;
 }
 
+.carousel-control2{
+  top: 125px;
+}
+
 
 
 /* CLUB */
@@ -408,7 +412,9 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
   margin-top: 5%;
 }
 /* Court Slider */
-
+.carousel-text2 .btn-carousel{
+  margin-top: -5%;
+}
 /* Horaire */
 .horaire{
   background-color: #F0F5FC;
@@ -687,6 +693,12 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
 .carousel-item{
   margin-bottom: 25%;
   height: 600px;
+}
+
+.carousel-item2{
+  height: 100% !important;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .carousel-img img{
