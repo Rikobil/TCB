@@ -4,70 +4,13 @@ Template Name: Homepage
 */
 get_header(); ?>
 <body>
-
-<div class="container-fluid top-carrousel">
-  <div class="carrousel-dots">
-    <div class="">
-      <a class="carousel-control-prev rounded-circle carousel-control-next-home" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-    </div>
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active rounded-circle"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1" class="rounded-circle"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2" class="rounded-circle"></li>
-    </ol>
-      <a class="carousel-control-next rounded-circle carousel-control-next-home" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-  </div>
-  <div class="carrousel-inner">
-    <div class="carrousel-item active">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs- 12 col-md-6">
-            <img class="d-block w-100" src="<?php the_field("image_slide_1")?>" alt="First slide">
-          </div>
-          <div class="col-xs- 12 col-md-6">
-            <h1>
-              <?php the_field("titre_slide_1")?>
-            </h1>
-            <div class="underline-title"></div>
-            <p class="carrousel-text">
-              long truc long truclong truc long truclong truc long truclong truc long truclong truc long truclong truc long truc  long truc long truclong truc long truclong truc long truclong truc long truclong truc long truclong truc long truclong truc long truclong truc long truclong truc long truclong truc long truclong truc long truc
-            </p>
-            <div class="btn btn-primary carrousel-btn">
-              RÉSERVER
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 <div class="container-fluid">
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <div class="carousel-dots">
-    <div class="carousel-nextprev">
-      <a class="carousel-control-prev rounded-circle carousel-control-prev-home" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-    </div>
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active rounded-circle"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1" class="rounded-circle"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="2" class="rounded-circle"></li>
     </ol>
-    <a class="carousel-control-next rounded-circle carousel-control-next-home" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="container">
@@ -135,11 +78,18 @@ get_header(); ?>
       </div>
     </div>
   </div>
+    <a class="carousel-control-prev rounded-circle carousel-control-prev-home" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next rounded-circle carousel-control-next-home" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
 </div>
 </div>
 
 <div class="container-fluid">
-
   <div class="row">
     <div class="col-1">
     </div>

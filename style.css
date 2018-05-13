@@ -99,9 +99,9 @@ body{
 /* Slider carousel bootstrap */
 
 .carousel{
-  height: 100%;
+  height: 50%;
 }
-/*
+
 .carousel-indicators{
   margin-left: 36.5%;
   bottom: -7px;
@@ -122,7 +122,7 @@ body{
 .carousel-indicators .active{
   background-color: #391CF1;
 }
-*/
+
 .carousel-inner{
   width: 80%;
   height: auto;
@@ -435,93 +435,6 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
   margin-bottom: 5%;
 }
 
-
-.top-carrousel{
-  position: relative;
-}
-.carrousel-inner h1{
-  margin: 0;
-}
-.carrousel-text{
-  margin-top: 10px;
-}
-.carrousel-btn{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-.carousel-indicators{
-  position: absolute;
-  width: 20%;
-  margin: 0 0 10px 0;
-  position: absolute;
-  left: 20%;
-  bottom: 13px;
-}
-.carousel-indicators li{
-  margin: 0 10px;
-}
-.carrousel-dots {
-    width: 50%;
-    height: 30%;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-}
-.carrousel-prevnext-div{
-  position: absolute;
-  bottom: 0;
-  width: 100px;
-  height: 100px;
-}
-.carousel-control-next {
-    background-color: #F0F5FC;
-    width: 50px;
-    height: 50px;
-    opacity: 1;
-    z-index: 20;
-    margin: 0;
-    margin-top: 50px;
-    bottom: 10px;
-    position: absolute;
-    left: 40%;
-}
-.carousel-control-prev{
-    background-color: #F0F5FC;
-    width: 50px;
-    height: 50px;
-    opacity: 1;
-    z-index: 20;
-    margin: 0;
-    margin-top: 50px;
-    bottom: 10px;
-    position: absolute;
-    left: 13%;
-}
-.carrousel-prevnext{
-  position: absolute;
-  background-color: #F0F5FC;
-  width: 50px;
-  height: 50px;
-  opacity: 1;
-  z-index: 20;
-}
-.carousel-indicators li{
-  background-color: #00EFBA;
-  width: 20px;
-  height: 20px;
-  margin-left: 2%;
-  cursor: pointer;
-}
-
-.carousel-indicators li:hover{
-  background-color: #391CF1;
-}
-
-.carousel-indicators .active{
-  background-color: #391CF1;
-}
-
 /* ACTUALITÉS */
 
 .actualites-pagination{
@@ -558,7 +471,6 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
   text-decoration: none;
   background-color: transparent;
 }
-
 
 /* RESULTATS */
 
@@ -659,6 +571,31 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
   margin: 20px auto;
 
 }
+
+/* 404 */
+
+.card-404{
+  min-width: 100%;
+  max-width: 100%;
+}
+.card-404 img{
+  width: 60%;
+  object-fit: cover;
+  display: block;
+  padding: 0;
+  margin: 20px auto 0 auto;
+}
+.btn-404{
+  color: #FFFFFF;
+  display: block;
+  margin: 20px auto;
+}
+
+/* MENTIONS */
+.mentions{
+  margin: 20px;
+}
+
                   /* RESPONSIVE */
                   /* RESPONSIVE */
                   /* RESPONSIVE */
