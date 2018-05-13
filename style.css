@@ -692,13 +692,21 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
 
 .carousel-item{
   margin-bottom: 25%;
-  height: 600px;
+  height: auto;
 }
 
-.carousel-item2{
+.carousel-item p{
+  height: 20%;
+}
+
+.carousel-item-part{
   height: 100% !important;
   margin-top: 5%;
   margin-bottom: 5%;
+}
+
+.carousel-item-court{
+  height: 450px !important;
 }
 
 .carousel-img img{
@@ -709,6 +717,7 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
   height: auto;
   margin-top: 2.5%;
 }
+
 
 .carousel-indicators{
   margin-left: -25%;
@@ -753,6 +762,11 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
   height: 1px;
   width: 50%;
   margin-bottom: 10px;
+}
+
+.row-card-responsive{
+  margin-left: 0;
+  margin-right: 0;
 }
 
 }

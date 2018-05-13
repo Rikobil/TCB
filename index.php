@@ -294,13 +294,13 @@ get_header(); ?>
 <div class="container-fluid text-center my-3">
     <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
         <div class="carousel-inner w-82" role="listbox">
-            <div class="carousel-item carousel-item2 row active">
+            <div class="carousel-item carousel-item-part row active">
                 <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/150x150/222/fff?text=1"></div>
                 <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/150x150/444?text=2"></div>
                 <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/150x150/888?text=3"></div>
                 <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/150x150/333?text=4"></div>
             </div>
-            <div class="carousel-item carousel-item2 row ">
+            <div class="carousel-item carousel-item-part row ">
                 <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/150x150?text=5"></div>
                 <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/150x150/555?text=6"></div>
                 <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/150x150/333/fff?text=7"></div>
