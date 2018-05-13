@@ -689,8 +689,13 @@ box-shadow: 5px 5px 10px 5px #cfcfcf;
   height: 600px;
 }
 
+.carousel-img img{
+  object-fit: cover;
+}
+
 .carousel-item h1 {
   height: auto;
+  margin-top: 2.5%;
 }
 
 .carousel-indicators{
